@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cookies 2.3</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body class="main">
+        <div class="navigation">
+            <a href="./main.html" class="whiteBg">
+                <button class="shadow" id="mainButton"></button>
+            </a>
+            <a href="./settings.html" class="blueBg">
+                <button class="shadow" id="setButton"></button>
+            </a>
+            <a href="./algorithms.html" class="whiteBg">
+                <button class="shadow" id="algButton"></button>
+            </a>
+            <a href="./configs.html" class="whiteBg">
+                <button class="shadow" id="confButton"></button>
+            </a>
+        </div>
+        <div class="vLine"></div>
+        <div class="ui">
+            <div class="settings">
+                <div class="settingsBlocks">
+                    <div class="settingsBlock">
+                        <h4 class="notblack">Выполнять алгоритмы в случайном порядке</h4>
+                        <div class="sToggle">
+                            <label id="sButton">
+                                <input id="toggleRandom" type="checkbox">
+                                <span id="rSlider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="settingsBlock">
+                        <h4 class="notblack">Разрешить переходы на URL без сертификата</h4>
+                        <div class="sToggle">
+                            <label id="sButton">
+                                <input id="toggleSSL" type="checkbox">
+                                <span id="rSlider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="settingsBlock">
+                        <h4 class="notblack">Выполнять алгоритмы по кругу</h4>
+                        <div class="sToggle">
+                            <label id="sButton">
+                                <input id="toggleLoop" type="checkbox">
+                                <span id="rSlider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="settingsBlock">
+                        <h4 class="notblack">Автоматически загрузить историю после завершения</h4>
+                        <div class="sToggle">
+                            <label id="sButton">
+                                <input id="toggleHistory" type="checkbox">
+                                <span id="rSlider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="settingsBlock">
+                        <h4 class="notblack">Автоматически сбросить историю после завершения</h4>
+                        <div class="sToggle">
+                            <label id="sButton">
+                                <input id="toggleReset" type="checkbox">
+                                <span id="rSlider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../scripts/settings.js"></script>
+</html>

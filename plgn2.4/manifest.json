@@ -1,0 +1,48 @@
+{
+    "name": "Cookies",
+    "description": "X",
+    "version": "2.4",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "workers/background.js"
+    },
+    "action": {
+        "default_popup": "popups/pages/main.html",
+        "default_icon": {
+            "16": "media/cookie.png",
+            "32": "media/cookie.png",
+            "48": "media/cookie.png",
+            "128": "media/cookie.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "workers/content.js"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "media/cookie.png",
+        "32": "media/cookie.png",
+        "48": "media/cookie.png",
+        "128": "media/cookie.png"
+    },
+    "permissions": [
+        "activeTab",
+        "storage",
+        "downloads",
+        "scripting",
+        "webNavigation",
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://*/", 
+        "https://*/*"
+    ]
+  
+}
